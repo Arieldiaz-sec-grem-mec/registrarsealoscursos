@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Alumnos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Registro de Alumnos</h1>
+
+        <form id="registrationForm">
+            <div class="input-group">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre y apellido" required>
+            </div>
+
+            <div class="input-group">
+                <label for="empresa">Empresa:</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Empresa donde trabaja" required>
+            </div>
+
+            <div class="input-group">
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" placeholder="Documento Nacional de Identidad" required>
+            </div>
+
+            <div class="input-group">
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso" required>
+                    <option value="" disabled selected>Selecciona un curso</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+            </div>
+
+            <button type="submit" id="submitBtn">Registrar</button>
+        </form>
+
+        <p id="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
